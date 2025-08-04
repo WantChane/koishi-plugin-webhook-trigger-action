@@ -1,5 +1,5 @@
 import { Bot, Context, Schema } from "koishi";
-import type { } from "@koishijs/plugin-server"
+import type {} from "@koishijs/plugin-server"
 import { OneBot } from "@koishijs/plugin-adapter-onebot";
 
 export const name = "webhook-trigger-action";
@@ -107,8 +107,7 @@ export function apply(ctx: Context, config: Config) {
 					logger.info("接收到get请求：" + path);
 					for (let httpheader in config[path].headers) {
 						// 检查头，如果不相等则返回400
-						const httpheader_lower = httpheader.toLowerCase();
-						if (c.header[httpheader_lower] != config[path].headers[httpheader])
+						if (c.header[httpheader.toLowerCase()] != config[path].headers[httpheader])
 							return (c.status = 400);
 					}
 					next();
@@ -139,8 +138,7 @@ export function apply(ctx: Context, config: Config) {
 					logger.info("接收到post请求：" + path);
 					for (let httpheader in config[path].headers) {
 						// 检查头，如果不相等则返回400
-						const httpheader_lower = httpheader.toLowerCase();
-						if (c.header[httpheader_lower] != config[path].headers[httpheader])
+						if (c.header[httpheader.toLowerCase()] != config[path].headers[httpheader])
 							return (c.status = 400);
 					}
 					next();
