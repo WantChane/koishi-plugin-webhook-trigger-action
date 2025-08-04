@@ -155,7 +155,7 @@ export function apply(ctx: Context, config: Config) {
 								bot,
 								rep.platform,
 								rep,
-								c.request.body ? c.request.body : {}
+								(c.request as any).body ? (c.request as any).body : {}
 							);
 							return (c.status = 200);
 						}
