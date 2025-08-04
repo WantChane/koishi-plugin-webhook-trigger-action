@@ -1,8 +1,8 @@
 import { Bot, Context, Schema } from "koishi";
-import type {} from "@koishijs/plugin-server"
+import type { } from "@koishijs/plugin-server"
 import { OneBot } from "@koishijs/plugin-adapter-onebot";
 
-export const name = "webhook-trigger-action";
+export const name = "@chanewant/webhook-trigger-action";
 export const inject = ["server"];
 export interface responseType {
 	platform: string;

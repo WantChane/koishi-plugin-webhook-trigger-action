@@ -1,7 +1,7 @@
 {
-  "name": "koishi-plugin-webhook-trigger-action",
+  "name": "@chanewant/koishi-plugin-webhook-trigger-action",
   "description": "监听指定路径上的网络请求，并向指定平台发送信息",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
@@ -12,10 +12,10 @@
     "Mcayear <mcayear@163.com>"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/Mcayear/koishi-plugin-webhook-trigger-action",
+  "homepage": "https://github.com/WantChane/koishi-plugin-webhook-trigger-action",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Mcayear/koishi-plugin-webhook-trigger-action.git"
+    "url": "git+https://github.com/WantChane/koishi-plugin-webhook-trigger-action.git"
   },
   "scripts": {
     "build": "atsc -b",
